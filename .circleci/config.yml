@@ -16,3 +16,4 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn test
+      - run: npx chromatic --project-token=t9vm0j8esa --exit-zero-on-changes
